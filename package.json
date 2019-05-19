@@ -1,0 +1,25 @@
+{
+  "name": "poitaggerclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@neutrinojs/airbnb": "^8.3.0",
+    "@neutrinojs/react": "^8.3.0",
+    "neutrino": "^8.3.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "web3": "^1.0.0-beta.55",
+    "web3-utils": "^1.0.0-beta.55"
+  }
+}

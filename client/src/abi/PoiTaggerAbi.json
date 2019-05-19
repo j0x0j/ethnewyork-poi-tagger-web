@@ -1,0 +1,165 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "cscTagsUncompressed",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "cscTags",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_managerAddress",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "cscAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "tag",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "AddedTag",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_cscAddress",
+        "type": "address"
+      },
+      {
+        "name": "_tag",
+        "type": "bytes32"
+      }
+    ],
+    "name": "addTag",
+    "outputs": [
+      {
+        "name": "_tagAdded",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_cscAddress",
+        "type": "address"
+      },
+      {
+        "name": "_tag",
+        "type": "bytes32"
+      }
+    ],
+    "name": "addTagUncompressed",
+    "outputs": [
+      {
+        "name": "_tagAdded",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_cscAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getTags",
+    "outputs": [
+      {
+        "name": "_tags",
+        "type": "bytes32[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_cscAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getTagsUncompressed",
+    "outputs": [
+      {
+        "name": "_tags",
+        "type": "bytes32[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
